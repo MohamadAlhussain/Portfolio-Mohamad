@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alhussain.tech/sitemap.xml 

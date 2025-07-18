@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0f0f1a;
+  --text-primary: #e0f7ff;
+  --text-secondary: #b3e5fc;
+  --text-tertiary: #00bcd4;
+  --text-muted: #00ff88;
+  --border-primary: #00bcd4;
+  --border-secondary: #00ff88;
+  --border-muted: rgba(0, 188, 212, 0.3);
+  --gradient-primary: linear-gradient(to right, #00bcd4, #00ff88, #2196f3);
+  --gradient-secondary: linear-gradient(to right, #00bcd4, #1976d2);
+  --gradient-glow: linear-gradient(to right, #00ff88, #2196f3);
+  --icon-primary: #00bcd4;
+  --icon-hover: #00ff88;
+  --card-bg: rgba(0, 188, 212, 0.1);
+  --card-border: rgba(0, 255, 136, 0.3);
+}
+
+/* Color classes */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+.bg-card {
+  background-color: var(--card-bg);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+.text-muted {
+  color: var(--text-muted);
+}
+.border-primary {
+  border-color: var(--border-primary);
+}
+.border-card {
+  border-color: var(--card-border);
+}
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+.gradient-secondary {
+  background: var(--gradient-secondary);
+}
+.icon-primary {
+  color: var(--icon-primary);
+}
+.icon-hover {
+  color: var(--icon-hover);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+body {
+  @apply bg-[#0a0a0f] text-cyan-100;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+@layer utilities {
+  /* Animation */
+
+  .animate-stagger-fade-in {
+    animation: staggerFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes staggerFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out both;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-120px);
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0.1;
+  }
+}
+.animate-fall-slow {
+  animation: fall 14s linear infinite;
+}
+.animate-fall-medium {
+  animation: fall 9s linear infinite;
+}
+.animate-fall-fast {
+  animation: fall 7s linear infinite;
+}
