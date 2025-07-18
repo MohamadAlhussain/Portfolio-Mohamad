@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
   {
     title: "Currency Converter",
@@ -51,9 +53,11 @@ export default function Projects() {
           >
             {/* Project image with gradient background */}
             <div className="md:w-1/2 w-full flex items-center justify-center bg-gradient-to-br from-cyan-900/40 to-green-900/30 p-6">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                width={400}
+                height={300}
                 className="w-full h-48 md:h-72 object-cover rounded-xl border-2 border-primary shadow-lg group-hover:scale-105 transition-transform duration-300"
               />
             </div>

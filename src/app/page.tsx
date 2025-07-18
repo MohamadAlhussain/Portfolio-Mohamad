@@ -33,7 +33,7 @@ export default function Home() {
           className="text-3xl sm:text-4xl font-extrabold gradient-text mb-4 flex items-center justify-center gap-2 animate-fade-in"
           style={{ animationDelay: "0ms" }}
         >
-          Hi, I'm Mohamad Alhussain
+          Hi, I&apos;m Mohamad Alhussain
         </h1>
         <div className="text-2xl sm:text-2xl font-bold mx-auto mt-2">
           <span>WEB DEVELOPER</span>
