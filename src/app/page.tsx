@@ -38,19 +38,25 @@ export default function Home() {
         <div className="text-2xl sm:text-2xl font-bold mx-auto mt-2">
           <span>WEB DEVELOPER</span>
         </div>
-        {/* Call to action button*/}
-        <Link href="/projects">
-          <button
-            className="mt-6 px-6 py-3 rounded-full gradient-primary text-black font-semibold text-lg hover:scale-105 transition-transform animate-pulse-slow flex items-center gap-2 glow-green animate-stagger-fade-in cursor-pointer group"
-            style={{ animationDelay: "300ms" }}
+        {/* Call to action buttons */}
+        <div className="flex flex-row gap-2 sm:gap-4 mt-6 justify-center items-center">
+          <Link href="/projects">
+            <button
+              className="w-40 px-4 py-2 rounded-full gradient-primary text-black font-semibold text-base hover:scale-105 transition-transform animate-pulse-slow glow-green animate-stagger-fade-in cursor-pointer group"
+              style={{ animationDelay: "300ms" }}
+            >
+              View Projects
+            </button>
+          </Link>
+          <a
+            href="/CV_Mohamad%20Alhussain.pdf"
+            download
+            className="w-40 px-4 py-2 rounded-full gradient-primary text-black font-semibold text-base hover:scale-105 transition-transform animate-pulse-slow glow-green animate-stagger-fade-in cursor-pointer group text-center"
+            style={{ animationDelay: "400ms" }}
           >
-            View My Projects{" "}
-            <ArrowRight
-              size={22}
-              className="inline-block transition-transform duration-200 group-hover:translate-x-1"
-            />
-          </button>
-        </Link>
+            Download CV
+          </a>
+        </div>
       </section>
     </div>
   );
