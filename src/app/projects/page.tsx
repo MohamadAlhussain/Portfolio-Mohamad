@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Suspense } from "react";
 
 // Loading component for images
-const ImageLoader = ({ src, alt, ...props }: any) => (
+const ImageLoader = () => (
   <div className="w-full h-48 md:h-72 bg-gradient-to-br from-cyan-900/20 to-green-900/10 rounded-xl flex items-center justify-center">
     <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
   </div>

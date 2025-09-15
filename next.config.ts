@@ -26,7 +26,6 @@ const nextConfig: NextConfig = {
   compress: true,
   // Enable experimental features for better performance
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
   // Headers for better caching
