@@ -1,4 +1,12 @@
 import Image from "next/image";
+import { Suspense } from "react";
+
+// Loading component for images
+const ImageLoader = ({ src, alt, ...props }: any) => (
+  <div className="w-full h-48 md:h-72 bg-gradient-to-br from-cyan-900/20 to-green-900/10 rounded-xl flex items-center justify-center">
+    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
 
 const projects = [
   {
@@ -53,13 +61,19 @@ export default function Projects() {
           >
             {/* Project image with gradient background */}
             <div className="md:w-1/2 w-full flex items-center justify-center bg-gradient-to-br from-cyan-900/40 to-green-900/30 p-6">
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={400}
-                height={300}
-                className="w-full h-48 md:h-72 object-cover rounded-xl border-2 border-primary shadow-lg group-hover:scale-105 transition-transform duration-300"
-              />
+              <Suspense fallback={<ImageLoader />}>
+                <Image
+                  src={project.image}
+                  alt={`${project.title} project screenshot`}
+                  width={400}
+                  height={300}
+                  className="w-full h-48 md:h-72 object-cover rounded-xl border-2 border-primary shadow-lg group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </Suspense>
             </div>
             {/* Project : title, description, and action buttons */}
             <div className="flex-1 flex flex-col justify-center items-center p-6 text-center">

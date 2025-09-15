@@ -1,8 +1,69 @@
 import Link from "next/link";
+import { Suspense } from "react";
+
+// Loading component for home page
+const HomeLoading = () => (
+  <div className="min-h-[70vh] flex items-center justify-center">
+    <div className="text-center">
+      <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p className="text-tertiary text-lg font-semibold">Loading portfolio...</p>
+    </div>
+  </div>
+);
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamad Alhussain",
+    "jobTitle": "Web Developer",
+    "description": "Professional web developer specializing in React, Next.js, TypeScript, and modern web technologies",
+    "url": "https://alhussain.tech",
+    "sameAs": [
+      "https://github.com/MohamadAlhussain",
+      "https://www.linkedin.com/in/mohamad-alhussain-61a102348/"
+    ],
+    "knowsAbout": [
+      "React",
+      "Next.js", 
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Tailwind CSS",
+      "HTML",
+      "CSS"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Webdesign with HTML, CSS",
+        "credentialCategory": "certificate",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "alfatraining GmbH"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential", 
+        "name": "JavaScript Developer",
+        "credentialCategory": "certificate",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "alfatraining GmbH"
+        }
+      }
+    ]
+  };
   return (
-    <div className="relative min-h-[70vh] flex flex-col items-center justify-center text-center gap-8 overflow-hidden">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <Suspense fallback={<HomeLoading />}>
+        <div className="relative min-h-[70vh] flex flex-col items-center justify-center text-center gap-8 overflow-hidden">
       {/* Animated background */}
       <div className="pointer-events-none fixed inset-0 w-full h-full z-0 select-none font-mono whitespace-nowrap">
         {/* Binary and code snippets */}
@@ -57,6 +118,8 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </div>
+        </div>
+      </Suspense>
+    </>
   );
 }

@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Home as HomeIcon, User, Folder, Mail as MailIcon } from "lucide-react";
 import React from "react";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,9 +17,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohamad Alhussain Portfolio",
+  title: "Mohamad Alhussain - Full Stack Web Developer | Portfolio",
   description:
-    "A modern, cyber-inspired portfolio showcasing my web development projects, skills, and certifications.",
+    "Professional web developer specializing in React, Next.js, TypeScript, and modern web technologies. View my projects, skills, and certifications.",
+  keywords: "web developer, react developer, next.js, typescript, portfolio, full stack developer, frontend, backend, javascript, node.js, mongodb, express",
+  authors: [{ name: "Mohamad Alhussain" }],
+  creator: "Mohamad Alhussain",
+  publisher: "Mohamad Alhussain",
+  openGraph: {
+    title: "Mohamad Alhussain - Web Developer Portfolio",
+    description: "Professional web developer showcasing modern web development projects and skills",
+    url: "https://alhussain.tech",
+    siteName: "Mohamad Alhussain Portfolio",
+    images: [
+      {
+        url: "https://alhussain.tech/M-neon.png",
+        width: 1200,
+        height: 630,
+        alt: "Mohamad Alhussain Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohamad Alhussain - Web Developer Portfolio",
+    description: "Professional web developer showcasing modern web development projects and skills",
+    images: ["https://alhussain.tech/M-neon.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://alhussain.tech",
+  },
+  category: "technology",
 };
 
 // Navigation items for the navbar
@@ -44,6 +86,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary min-h-screen flex flex-col`}
         style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
       >
+        {/* Skip to main content link for accessibility */}
+        <a 
+          href="#main-content" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded z-50"
+        >
+          Skip to main content
+        </a>
         {/* Navbar with navigation links */}
         <nav className="w-full flex justify-center items-center px-4 sm:px-6 lg:px-8 py-4 bg-secondary border-b border-secondary">
           <div className="flex gap-2 sm:gap-4 lg:gap-8 items-center">
@@ -70,8 +119,10 @@ export default function RootLayout({
           </div>
         </nav>
         {/* Main */}
-        <main className="max-w-4xl mx-auto px-4 flex-1 w-full flex flex-col">
-          {children}
+        <main id="main-content" className="max-w-4xl mx-auto px-4 flex-1 w-full flex flex-col">
+          <ErrorBoundary>
+            {children}
+          </ErrorBoundary>
         </main>
         {/* Footer */}
         <footer className="w-full py-2 bg-secondary text-center text-secondary text-sm border-t border-secondary">
