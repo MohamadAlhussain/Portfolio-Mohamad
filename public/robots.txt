@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://alhussain.tech/sitemap.xml 
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+Sitemap: https://alhussain.tech/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1 

@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "About Me - Mohamad Alhussain | Web Developer",
+  description: "Learn about Mohamad Alhussain's journey as a web developer, skills, certifications, and passion for modern web technologies.",
+  keywords: "about, web developer, skills, certifications, experience, Mohamad Alhussain",
+  alternates: {
+    canonical: "https://alhussain.tech/about/",
+  },
+};
+
 export default function About() {
   // List of skills
   const skills = [

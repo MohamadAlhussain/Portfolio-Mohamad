@@ -1,6 +1,15 @@
 import Image from "next/image";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "Projects - Mohamad Alhussain | Web Developer Portfolio",
+  description: "View my portfolio of web development projects including React, Next.js, TypeScript applications and WordPress websites.",
+  keywords: "projects, portfolio, web development, react, nextjs, typescript, mohamad alhussain",
+  alternates: {
+    canonical: "https://alhussain.tech/projects/",
+  },
+};
+
 // Loading component for images
 const ImageLoader = () => (
   <div className="w-full h-48 md:h-72 bg-gradient-to-br from-cyan-900/20 to-green-900/10 rounded-xl flex items-center justify-center">

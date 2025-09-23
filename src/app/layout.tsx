@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://alhussain.tech",
+    canonical: "https://alhussain.tech/",
   },
   category: "technology",
 };

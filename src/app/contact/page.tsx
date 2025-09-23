@@ -1,6 +1,15 @@
 import Link from "next/link";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
+export const metadata = {
+  title: "Contact - Mohamad Alhussain | Web Developer",
+  description: "Get in touch with Mohamad Alhussain for web development projects, collaborations, or any inquiries.",
+  keywords: "contact, web developer, hire, collaboration, mohamad alhussain",
+  alternates: {
+    canonical: "https://alhussain.tech/contact/",
+  },
+};
+
 // Contact methods data
 const contactMethods = [
   {
