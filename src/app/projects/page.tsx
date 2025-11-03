@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 export const metadata = {
   title: "Projects - Mohamad Alhussain | Web Developer Portfolio",
-  description: "View my portfolio of web development projects including React, Next.js, TypeScript applications and WordPress websites.",
+  description: "View my portfolio of web development projects including React, Next.js, TypeScript applications.",
   keywords: "projects, portfolio, web development, react, nextjs, typescript, mohamad alhussain",
   alternates: {
     canonical: "https://alhussain.tech/projects/",
@@ -33,13 +33,6 @@ const projects = [
     image: "/todo.png",
     link: "https://github.com/MohamadAlhussain/Todo",
     demo: "https://todo-ten-lemon-71.vercel.app/",
-  },
-  {
-    title: "Lexerno",
-    description:
-      "A responsive business website built with WordPress and custom themes. Features SEO optimization, service landing pages, two languages and integrated contact forms.",
-    image: "/lexerno.png",
-    demo: "https://lexerno.com/",
   },
   {
     title: "HSP Potsdam",

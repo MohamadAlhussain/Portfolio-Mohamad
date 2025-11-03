@@ -125,8 +125,50 @@ export default function RootLayout({
           </ErrorBoundary>
         </main>
         {/* Footer */}
-        <footer className="w-full py-2 bg-secondary text-center text-secondary text-sm border-t border-secondary">
-          © 2025 Mohamad Alhussain. All rights reserved.
+        <footer className="w-full py-2 sm:py-3 bg-secondary text-secondary text-xs sm:text-sm border-t border-secondary">
+          <div className="max-w-4xl mx-auto px-4">
+            {/* Desktop: Impressum left, Copyright center, Datenschutz right */}
+            {/* Mobile: Copyright in center on first line, Impressum left and Datenschutz right on second line */}
+            <div className="hidden sm:flex justify-between items-center gap-2">
+              <div className="text-xs text-secondary/60">
+                <Link href="/impressum" className="hover:text-tertiary transition-colors duration-200">
+                  Impressum
+                </Link>
+              </div>
+              <div className="text-center text-xs text-secondary/70">
+                © 2025 Mohamad Alhussain. All rights reserved.
+                <br />
+                <span className="text-secondary/60">
+                  Founder of <Link href="/lexerno" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO</Link>
+                </span>
+              </div>
+              <div className="text-xs text-secondary/60">
+                <Link href="/datenschutz" className="hover:text-tertiary transition-colors duration-200">
+                  Datenschutz
+                </Link>
+              </div>
+            </div>
+            
+            {/* Mobile: Two lines layout */}
+            <div className="flex flex-col gap-1.5 sm:hidden">
+              {/* First line: Copyright centered */}
+              <div className="text-center text-[10px] text-secondary/70">
+                © 2025 Mohamad Alhussain
+                <span className="text-secondary/60">
+                  {" "}· Founder of <Link href="/lexerno" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO</Link>
+                </span>
+              </div>
+              {/* Second line: Impressum left, Datenschutz right */}
+              <div className="flex justify-between items-center text-[10px] text-secondary/60">
+                <Link href="/impressum" className="hover:text-tertiary transition-colors duration-200">
+                  Impressum
+                </Link>
+                <Link href="/datenschutz" className="hover:text-tertiary transition-colors duration-200">
+                  Datenschutz
+                </Link>
+              </div>
+            </div>
+          </div>
         </footer>
       </body>
     </html>
