@@ -60,23 +60,23 @@ export default function About() {
         About Me
       </h1>
       <p className="text-secondary max-w-2xl text-center">
-        I'm an aspiring web developer with a growing passion for building
-        modern, user-friendly websites. I've learned front-end and back-end
+        I&apos;m an aspiring web developer with a growing passion for building
+        modern, user-friendly websites. I&apos;ve learned front-end and back-end
         technologies like HTML, CSS, JavaScript, React, Next.js, Tailwind CSS,
         Express, MongoDB, and MySQL through online courses and self-study.
         <br />
         <br />
-        While I'm still early in my journey, I enjoy experimenting with new
+        While I&apos;m still early in my journey, I enjoy experimenting with new
         tools, improving my skills through personal projects, and turning ideas
         into interactive browser experiences.
         <br />
         <br />
-        I've earned certifications from platforms like Coursera and alfatraining
+        I&apos;ve earned certifications from platforms like Coursera and alfatraining
         GmbH, which have helped me build a solid foundation and understand
         real-world development practices.
         <br />
         <br />
-        I'm comfortable working independently, and I also enjoy collaborating in
+        I&apos;m comfortable working independently, and I also enjoy collaborating in
         a team to share knowledge and achieve better results.
         <br />
         <br />
