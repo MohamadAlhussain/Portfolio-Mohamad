@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 export const metadata = {
   title: "Contact - Mohamad Alhussain | Web Developer",
@@ -17,12 +17,6 @@ const contactMethods = [
     value: "contact@alhussain.tech",
     icon: Mail,
     link: "mailto:contact.alhussain.tech",
-  },
-  {
-    name: "WhatsApp",
-    value: "+49 176 20442944",
-    icon: Phone,
-    link: "https://wa.me/4917620442944",
   },
   {
     name: "LinkedIn",
@@ -52,7 +46,7 @@ export default function Contact() {
         through any of these channels!
       </p>
       {/* Contact methods grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {contactMethods.map((method, idx) => (
           // Contact method card
           <Link

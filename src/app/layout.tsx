@@ -158,8 +158,8 @@ export default function RootLayout({
                   {" "}· Founder of <Link href="/lexerno" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO</Link>
                 </span>
               </div>
-              {/* Second line: Impressum left, Datenschutz right */}
-              <div className="flex justify-between items-center text-[10px] text-secondary/60">
+              {/* Second line: Impressum and Datenschutz centered */}
+              <div className="flex justify-center items-center gap-4 text-[10px] text-secondary/60">
                 <Link href="/impressum" className="hover:text-tertiary transition-colors duration-200">
                   Impressum
                 </Link>
