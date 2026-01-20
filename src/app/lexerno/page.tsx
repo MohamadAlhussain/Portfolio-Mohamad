@@ -20,7 +20,7 @@ export default function Lexerno() {
           <p className="text-secondary leading-relaxed mb-4">
             Diese Portfolio-Website wurde von mir selbst entwickelt und dient dazu, meine Arbeit als Entwickler und Designer zu präsentieren.
             Als Gründer von <a href="https://lexerno.com" target="_blank" rel="follow noopener noreferrer" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO</a>,
-            einer <a href="https://lexerno.com/de" target="_blank" rel="follow noopener noreferrer" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">Webdesign Agentur in Potsdam und Berlin</a>,{" "}
+            einer <a href="https://lexerno.com" target="_blank" rel="follow noopener noreferrer" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">Webdesign Agentur in Potsdam und Berlin</a>,{" "}
             entwickle ich handcodierte Websites ohne Vorlage mit modernsten Technologien wie Next.js und Tailwind CSS.
           </p>
         </section>
@@ -58,7 +58,7 @@ export default function Lexerno() {
             Wenn Sie nach einer professionellen Website suchen, empfehle ich Ihnen, sich über{" "}
             <a href="https://lexerno.com/services" target="_blank" rel="follow noopener noreferrer" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO Website mieten</a>{" "}
             zu informieren. Die Kombination aus moderner Technologie, flexiblem Preismodell und professioneller Umsetzung
-            macht <a href="https://lexerno.com/de" target="_blank" rel="follow noopener noreferrer" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO Webdesign Berlin</a>{" "}
+            macht <a href="https://lexerno.com" target="_blank" rel="follow noopener noreferrer" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO Webdesign Berlin</a>{" "}
             zur idealen Wahl für Unternehmen jeder Größe.
           </p>
         </section>

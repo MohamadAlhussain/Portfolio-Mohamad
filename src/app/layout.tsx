@@ -80,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="0jgpZlqmPrGoguvmhXaow326dcFhl0YUMXEEEvMA4SI" />
         <link rel="icon" href="/M-neon.png" type="image/png" />
       </head>
       <body
