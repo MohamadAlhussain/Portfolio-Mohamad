@@ -6,7 +6,7 @@ export const metadata = {
   description: "View my portfolio of web development projects including React, Next.js, TypeScript applications.",
   keywords: "projects, portfolio, web development, react, nextjs, typescript, mohamad alhussain",
   alternates: {
-    canonical: "https://alhussain.tech/projects/",
+    canonical: "https://alhussain.netlify.app/projects/",
   },
 };
 

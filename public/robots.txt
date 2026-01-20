@@ -4,7 +4,7 @@ Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 
-Sitemap: https://alhussain.tech/sitemap.xml
+Sitemap: https://alhussain.netlify.app/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1 

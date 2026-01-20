@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mohamad Alhussain - Web Developer Portfolio",
     description: "Professional web developer showcasing modern web development projects and skills",
-    url: "https://alhussain.tech",
+    url: "https://alhussain.netlify.app",
     siteName: "Mohamad Alhussain Portfolio",
     images: [
       {
-        url: "https://alhussain.tech/M-neon.png",
+        url: "https://alhussain.netlify.app/M-neon.png",
         width: 1200,
         height: 630,
         alt: "Mohamad Alhussain Portfolio",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mohamad Alhussain - Web Developer Portfolio",
     description: "Professional web developer showcasing modern web development projects and skills",
-    images: ["https://alhussain.tech/M-neon.png"],
+    images: ["https://alhussain.netlify.app/M-neon.png"],
   },
   robots: {
     index: true,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://alhussain.tech/",
+    canonical: "https://alhussain.netlify.app/",
   },
   category: "technology",
 };
@@ -87,8 +87,8 @@ export default function RootLayout({
         style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
       >
         {/* Skip to main content link for accessibility */}
-        <a 
-          href="#main-content" 
+        <a
+          href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded z-50"
         >
           Skip to main content
@@ -148,7 +148,7 @@ export default function RootLayout({
                 </Link>
               </div>
             </div>
-            
+
             {/* Mobile: Two lines layout */}
             <div className="flex flex-col gap-1.5 sm:hidden">
               {/* First line: Copyright centered */}

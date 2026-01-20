@@ -6,7 +6,7 @@ export const metadata = {
   description: "Get in touch with Mohamad Alhussain for web development projects, collaborations, or any inquiries.",
   keywords: "contact, web developer, hire, collaboration, mohamad alhussain",
   alternates: {
-    canonical: "https://alhussain.tech/contact/",
+    canonical: "https://alhussain.netlify.app/contact/",
   },
 };
 
@@ -14,19 +14,16 @@ export const metadata = {
 const contactMethods = [
   {
     name: "Email",
-    value: "contact@alhussain.tech",
     icon: Mail,
-    link: "mailto:contact.alhussain.tech",
+    link: "mailto:herr.alhussain@gmail.com",
   },
   {
     name: "LinkedIn",
-    value: "Mohamad Alhussain",
     icon: Linkedin,
     link: "https://www.linkedin.com/in/mohamad-alhussain-61a102348/",
   },
   {
     name: "GitHub",
-    value: "MohamadAlhussain",
     icon: Github,
     link: "https://github.com/MohamadAlhussain",
   },
@@ -70,13 +67,9 @@ export default function Contact() {
                 />
               </div>
               {/* Contact method name */}
-              <h3 className="text-xl font-bold text-tertiary mb-2 group-hover:text-muted transition-colors duration-300">
+              <h3 className="text-xl font-bold text-tertiary group-hover:text-muted transition-colors duration-300">
                 {method.name}
               </h3>
-              {/* Contact method value */}
-              <p className="text-secondary text-sm group-hover:text-tertiary transition-colors duration-300">
-                {method.value}
-              </p>
             </div>
           </Link>
         ))}

@@ -2,7 +2,7 @@ export const metadata = {
   title: "Datenschutzerklärung - Mohamad Alhussain | Web Developer",
   description: "Datenschutzerklärung und Informationen zur Datenverarbeitung auf dieser Website",
   alternates: {
-    canonical: "https://alhussain.tech/datenschutz/",
+    canonical: "https://alhussain.netlify.app/datenschutz/",
   },
 };
 
@@ -13,15 +13,15 @@ export default function Datenschutz() {
         <h1 className="text-4xl font-extrabold gradient-text mb-6 text-center">
           Datenschutzerklärung
         </h1>
-        
+
         <div className="text-secondary leading-relaxed space-y-6">
           <section>
             <h2 className="text-2xl font-bold text-tertiary mb-3">1. Datenschutz auf einen Blick</h2>
-            
+
             <h3 className="text-xl font-semibold text-tertiary mb-2 mt-4">Allgemeine Hinweise</h3>
             <p className="mb-4">
-              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen 
-              Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen 
+              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen
+              Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen
               Sie persönlich identifiziert werden können.
             </p>
 
@@ -29,26 +29,26 @@ export default function Datenschutz() {
             <p className="mb-4">
               <strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong>
               <br />
-              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten 
+              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
               können Sie dem Abschnitt &ldquo;Hinweis zur Verantwortlichen Stelle&rdquo; in dieser Datenschutzerklärung entnehmen.
             </p>
 
             <p className="mb-4">
               <strong>Wie erfassen wir Ihre Daten?</strong>
               <br />
-              Diese Website erfasst keine personenbezogenen Daten automatisch. Daten werden nur dann erfasst, 
-              wenn Sie uns aktiv kontaktieren (z.B. per E-Mail oder WhatsApp). Die Website verwendet keine 
+              Diese Website erfasst keine personenbezogenen Daten automatisch. Daten werden nur dann erfasst,
+              wenn Sie uns aktiv kontaktieren (z.B. per E-Mail oder WhatsApp). Die Website verwendet keine
               Tracking-Tools wie Google Analytics und keine Cookies für Tracking-Zwecke.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-tertiary mb-3">2. Allgemeine Hinweise und Pflichtinformationen</h2>
-            
+
             <h3 className="text-xl font-semibold text-tertiary mb-2 mt-4">Datenschutz</h3>
             <p className="mb-4">
-              Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln 
-              Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzbestimmungen 
+              Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln
+              Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzbestimmungen
               sowie dieser Datenschutzerklärung.
             </p>
 
@@ -59,7 +59,7 @@ export default function Datenschutz() {
               <br />
               Mohamad Alhussain
               <br />
-              E-Mail: contact@alhussain.tech
+              E-Mail: herr.alhussain@gmail.com
               <br />
               WhatsApp: +49 176 20442944
             </p>
@@ -68,8 +68,8 @@ export default function Datenschutz() {
           <section>
             <h2 className="text-2xl font-bold text-tertiary mb-3">3. Kontaktaufnahme</h2>
             <p className="mb-4">
-              Wenn Sie uns per E-Mail oder WhatsApp kontaktieren, werden Ihre Angaben aus der Kontaktanfrage 
-              inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall 
+              Wenn Sie uns per E-Mail oder WhatsApp kontaktieren, werden Ihre Angaben aus der Kontaktanfrage
+              inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall
               von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
             </p>
           </section>
@@ -77,8 +77,8 @@ export default function Datenschutz() {
           <section>
             <h2 className="text-2xl font-bold text-tertiary mb-3">4. Google Fonts</h2>
             <p className="mb-4">
-              Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von 
-              Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren 
+              Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von
+              Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren
               Browsercache, um Texte und Schriftarten korrekt anzuzeigen.
               <br />
               <br />
@@ -96,9 +96,9 @@ export default function Datenschutz() {
           <section>
             <h2 className="text-2xl font-bold text-tertiary mb-3">5. SSL- bzw. TLS-Verschlüsselung</h2>
             <p className="mb-4">
-              Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, 
-              wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- 
-              bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile 
+              Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte,
+              wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-
+              bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile
               des Browsers von &quot;http://&quot; auf &quot;https://&quot; wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
             </p>
           </section>
@@ -106,9 +106,9 @@ export default function Datenschutz() {
           <section>
             <h2 className="text-2xl font-bold text-tertiary mb-3">6. Ihre Rechte</h2>
             <p className="mb-4">
-              Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer 
-              gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung 
-              oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt 
+              Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer
+              gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung
+              oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt
               haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen.
             </p>
           </section>

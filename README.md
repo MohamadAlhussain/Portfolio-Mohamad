@@ -4,7 +4,7 @@
 
 ## 🚀 Live Site
 
-[https://alhussain.tech](https://alhussain.tech)
+[https://alhussain.netlify.app](https://alhussain.netlify.app)
 
 ## 📦 Repository
 

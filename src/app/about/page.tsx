@@ -3,7 +3,7 @@ export const metadata = {
   description: "Learn about Mohamad Alhussain's journey as a web developer, skills, certifications, and passion for modern web technologies.",
   keywords: "about, web developer, skills, certifications, experience, Mohamad Alhussain",
   alternates: {
-    canonical: "https://alhussain.tech/about/",
+    canonical: "https://alhussain.netlify.app/about/",
   },
 };
 
@@ -80,7 +80,7 @@ export default function About() {
         a team to share knowledge and achieve better results.
         <br />
         <br />
-        Additionally, I am the founder of <a href="/lexerno" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO</a>, 
+        Additionally, I am the founder of <a href="/lexerno" className="text-tertiary hover:text-muted transition-colors duration-200 font-medium">LEXERNO</a>,
         a web design agency where I help businesses create modern, hand-coded websites with cutting-edge technologies.
       </p>
 
